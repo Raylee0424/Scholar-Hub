@@ -2,6 +2,7 @@ import { useState } from "react"
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
 import { Trash2, Upload, Plus } from "lucide-react"
+import { AccountPendingCard } from "./AccountPendingCard"
 
 export const RegisterCard = ()  =>{
   const [formData, setFormData] = useState({
@@ -16,6 +17,7 @@ export const RegisterCard = ()  =>{
   const [students, setStudents] = useState([{ id: 1, lrn: "" }])
   const [uploadedFiles, setUploadedFiles] = useState<{ id: number; file: File }[]>([])
   const [isDragging, setIsDragging] = useState(false)
+  const [showModal, setShowModal] = useState(false)
 
   const handleInputChange = (field: string, value: string) => {
     setFormData(prev => ({ ...prev, [field]: value }))
@@ -85,7 +87,7 @@ export const RegisterCard = ()  =>{
       return
     }
     console.log("Registration data:", { ...formData, students, uploadedFiles })
-    alert("Registration submitted!")
+    setShowModal(true)
   }
 
   return (
@@ -272,6 +274,12 @@ export const RegisterCard = ()  =>{
           </div>
         </form>
       </div>
+
+      {showModal && (
+        <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50">
+          <AccountPendingCard isModal onClose={() => setShowModal(false)} />
+        </div>
+      )}
     </div>
 
   )

@@ -1,3 +1,14 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+:root {
+  --navbar-bg: #d4d433;
+  --button-green: #4a9d5f;
+  --button-hover-green: #3d8550;
+  --button-white: #ffffff;
+  --button-gray: #e0e0e0;
+  --signin-bg: #f4f4c0;
+  --text-gray: #gray-900;
+  --text-gray-hover: #gray-700;
+}
+

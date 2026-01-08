@@ -12,7 +12,7 @@ export const PasswordResetCard = () => {
 
   return (
     <div className="flex flex-col items-center pt-20 bg-gray-50 min-h-screen">
-      <div className="w-full max-w-lg rounded-2xl bg-[#f4f4c0] p-12 shadow-lg">
+      <div className="w-full max-w-lg rounded-2xl bg-(--signin-bg) p-12 shadow-lg">
         <h1 className="text-3xl font-bold text-center text-gray-900 mb-8">Password Reset</h1>
 
         <form onSubmit={handleSubmit} className="space-y-10">
@@ -28,7 +28,7 @@ export const PasswordResetCard = () => {
           <div className="flex justify-center pt-8">
             <Button
               type="submit"
-              className="h-12 rounded-full bg-[#4a9d5f] px-12 text-base font-semibold text-white hover:bg-[#3d8550] transition-colors"
+              className="h-12 rounded-full bg-(--button-green) px-12 text-base font-semibold text-white hover:bg-(--button-hover-green) transition-colors"
             >
               Enter
             </Button>

@@ -13,7 +13,7 @@ export const SignInCard = () => {
 	
 	return (
 		<div className="flex flex-col items-center pt-20">
-			<div className="w-full max-w-lg rounded-2xl bg-[#f4f4c0] p-12 shadow-lg">
+			<div className="w-full max-w-lg rounded-2xl bg-(--signin-bg) p-12 shadow-lg">
 				<div className="mb-8 flex items-center gap-4">
 					<div className="relative h-20 w-20 shrink-0">
 						<img src="/Logo.png" alt="Bayog Elementary National School Logo" className="object-contain h-full w-full" />

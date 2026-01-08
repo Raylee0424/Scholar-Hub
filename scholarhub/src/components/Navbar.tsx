@@ -21,7 +21,7 @@ export const Navbar = () => {
     };
   }, []);
   return (
-    <header className="bg-[#d4d433] px-6 py-4">
+    <header className="bg-(--navbar-bg) px-6 py-4">
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-8">
           <div className="relative h-16 w-16">
@@ -66,8 +66,8 @@ export const Navbar = () => {
             <Button
               className={`h-10 w-32 rounded-full px-12 text-base text-[20px] font-semibold transition-colors ${
                 isRegisterPage
-                  ? "bg-white text-[#4a9d5f] hover:bg-[#e0e0e0]"
-                  : "bg-[#4a9d5f] text-white hover:bg-[#3d8550]"
+                  ? "bg-(--button-white) text-(--button-green) hover:bg-(--button-gray)"
+                  : "bg-(--button-green) text-(--button-white) hover:bg-(--button-hover-green)"
               }`}
             >
               Login
@@ -78,8 +78,8 @@ export const Navbar = () => {
             <Button
               className={`h-10 w-32 rounded-full px-12 text-base text-[20px] font-semibold transition-colors ${
                 isRegisterPage
-                  ? "bg-[#4a9d5f] text-white hover:bg-[#3d8550]"
-                  : "bg-white text-[#4a9d5f] hover:bg-[#e0e0e0]"
+                  ? "bg-(--button-green) text-(--button-white) hover:bg-(--button-hover-green)"
+                  : "bg-(--button-white) text-(--button-green) hover:bg-(--button-gray)"
               }`}
             >
               Register
