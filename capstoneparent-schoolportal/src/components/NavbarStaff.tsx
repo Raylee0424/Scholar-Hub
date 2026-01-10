@@ -61,7 +61,7 @@ export const Navbar = () => {
               href="/learn"
               className="text-lg font-medium text-gray-900 hover:text-gray-700 transition-colors"
             >
-              Learn about your child
+              Records
             </a>
           </nav>
         </div>
