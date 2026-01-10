@@ -237,10 +237,11 @@ export const RegisterCard = ()  =>{
               <div
                 className={`border-4 border-dashed ${
                   isDragging ? "border-green-600 bg-green-50" : "border-gray-400"
-                } rounded-2xl p-8 text-center bg-white transition-colors`}
+                } rounded-2xl p-8 text-center bg-white transition-colors cursor-pointer hover:border-green-500 hover:bg-green-50`}
                 onDragOver={handleDragOver}
                 onDragLeave={handleDragLeave}
                 onDrop={handleDrop}
+                onClick={() => document.getElementById("file-upload")?.click()}
               >
                 <input type="file" id="file-upload" multiple className="hidden" onChange={handleFileInput} />
                 <label htmlFor="file-upload" className="cursor-pointer flex flex-col items-center gap-3">
